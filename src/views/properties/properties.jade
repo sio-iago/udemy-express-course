@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+  h1= title
+  p= "User: " + user.username
+  ul
+    each property in properties
+        li
+            h3= property.name
+            p= property.description
+            p
+                if isRent
+                    b= "EUR " + property.rent
+                else
+                    b= "EUR " + property.price

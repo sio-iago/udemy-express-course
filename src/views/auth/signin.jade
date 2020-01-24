@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+  h1 Restricted Area
+  form(method='post')
+    p
+        label Username
+        br
+        input(type='text', name='username')
+    p
+        label Password
+        br
+        input(type='password', name='password')
+    p
+        input(type='submit', value='Sign In')
